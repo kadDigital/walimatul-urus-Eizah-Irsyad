@@ -1,0 +1,735 @@
+* {
+    margin: 0%;
+    
+}
+
+body {
+    background-color: #Ffff;
+    
+}
+button {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    background-color: red;
+}
+
+button img {
+    height: 300px;
+    width: 300px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    
+        
+}
+
+div .container .box {
+    /* border: 2px solid white; */
+    
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    
+   
+}
+
+p {
+    font-family: 'Cinzel', serif;
+}
+
+
+h1 {
+    font-family: 'Great Vibes', cursive; 
+}
+.animated-text {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+.animated-text span {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.visible .animate-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+
+
+div.box.visible {
+  opacity: 1;
+  opacity: 1; /* Show when visible */
+  transform: scale(1);
+  
+}
+
+div .first  {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-image: url('images/div1.png'); */
+    background-position: center;
+    height: 670px;
+    width: 385px;
+    overflow: hidden;
+    margin-top: -15px;
+    
+   
+}
+div .first .design img {
+    height: 500px;
+    width: 370px;
+    
+    
+    
+    
+}
+
+div .first .design img:nth-child(1) {
+    height: 700px;
+    animation: from-left 3s forwards;
+    width: 360px;
+    position: relative;
+
+    
+    
+}
+
+div .first .design img:nth-child(2) {
+    margin-bottom: 460px;
+    margin-left: 180px;
+    animation: from-right 3s forwards;
+    position: absolute;
+    
+}
+
+div .first .design img:nth-child(3) {
+    margin-top: 500px;
+    margin-right: 100px;
+    animation: from-left 3s forwards;
+    width: 360px;
+    position: absolute;
+    
+    
+}
+div .first .design img:nth-child(4) {
+    height: 25px;
+    width: 25px;
+    padding-top: 200px;
+    position: absolute;
+    
+}
+
+
+
+
+@keyframes from-right {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-10%);
+        opacity: 1;
+      }
+}
+
+@keyframes from-left {
+    from {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+}
+
+
+
+div .first .first-text {
+    position: absolute;
+    
+}
+
+div .first .first-text img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 440px;
+    position: absolute;
+    
+}
+
+div .first .first-text h1 {
+    position: absolute;
+    font-weight: 100;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-top: -70px;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+
+}
+
+div .first .first-text p{
+    position:absolute;
+    margin-bottom: 320px;
+    width: 350px;
+    font-size: 15px;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    margin-left: 30px;
+}
+
+div .first h2 {
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 150px;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+}
+
+div .first .header {
+    padding-left: 200px;
+    padding-top: 35px;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+}
+
+
+div .first .header1 {
+    
+    opacity: 0;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    animation: fade-in 2s forwards;
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      
+    }
+  }
+
+
+div .first .footer {
+    margin-top: 580px;
+    padding-left: 130px;
+    animation: fade-in 4s forwards;
+}
+
+div .first .footer-2 {
+    margin-top: 620px;
+    padding-left:80px;
+    animation: fade-in 4s forwards;
+}
+
+div .first .first-text #span {
+    margin-left: 100px;
+}
+
+
+
+span:nth-child(2) {
+    margin-left: 40px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
+  
+  .visible {
+    opacity: 1;
+
+  }
+  
+div .second {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/3div.jpg');
+    background-position: center;
+    height: 560px;
+    width: 385px;
+    margin-top: -20px;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+
+
+div .second .design1  {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 235px;
+    animation: fade-in 2s forwards;
+    
+}
+
+div .second .design2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    rotate: 180deg;
+    margin-right: 235px;
+    animation: fade-in 2s forwards;
+}
+
+/* div .second .design3 {
+    width: 370px;
+    height: 500px;
+    position: absolute;
+    bottom: -135px;
+    animation: fade-in 2s forwards;
+    margin-right: 235px;
+} */
+
+div .second-text .line1 {
+    margin-bottom: 370px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+
+}
+
+div .second-text .line2{
+    margin-bottom: 310px;
+    position: absolute;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+
+}
+div .second-text .line3 {
+    margin-bottom: 200px;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing:5 ;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+
+}
+
+div .second-text .line4 {
+    margin-bottom: 80px;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing:5 ;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+
+
+
+}
+
+div .second-text .line5 {
+    margin-bottom: 140px;
+    position: absolute;
+    font-weight: bold;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+
+
+}
+
+div .second-text .line6 {
+    margin-top: 30px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+    
+
+}
+div .second-text .line7 {
+    margin-top: 75px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+   
+    
+
+}
+div .second-text .line8 {
+    margin-top: 140px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+    
+
+}
+div .second-text .line9 {
+    margin-top: 180px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+
+
+}
+div .second-text .line10 {
+    margin-top: 280px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+
+}
+div .second-text .line11 {
+    margin-top: 340px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+
+}
+
+div .second-text .line12 {
+    margin-top: 400px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div .third  {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/3div.jpg');
+    background-position: center;
+    height: 670px;
+    width: 385px;
+    margin-top: -20px;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+
+    font-weight: 100;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: slow-fade 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: slow-fade 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: slow-fade 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: slow-fade 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: slow-fade 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: slow-fade 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: slow-fade 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: slow-fade 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: slow-fade 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: slow-fade 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(11) {
+    animation: slow-fade 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: slow-fade 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: slow-fade 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: slow-fade 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(15) {
+    animation: slow-fade 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(16) {
+    animation: slow-fade 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(17) {
+    animation: slow-fade 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(18) {
+    animation: slow-fade 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes slow-fade {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+div .fourth  {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/3div.jpg');
+    background-position: center;
+    height: 670px;
+    width: 385px;
+    margin-top: -20px;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+
+
+
+div .fifth  {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/3div.jpg');
+    background-position: center;
+    height: 670px;
+    width: 385px;
+    margin-top: -20px;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    
+    
+}
+
+div .sixth  {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/3div.jpg');
+    background-position: center;
+    height: 670px;
+    width: 385px;
+    margin-top: -20px;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    
+}
+
+div .seventh  {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/3div.jpg');
+    background-position: center;
+    height: 670px;
+    width: 385px;
+    margin-top: -20px;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    flex-direction: row;
+    display: flex;
+    
+    
+    
+    
+}
+
+div .seventh h1 {
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    padding-bottom: 15px;
+
+}
+div .seventh p {
+    letter-spacing: 1px;
+    text-shadow:0 15px 10px rgba(0, 0, 0, 0.3) ;
+
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  #countdown > div {
+    text-align: center;
+  }
+  
+  #countdown > div > span {
+    display: block;
+    font-size: 28px;
+  }
+  
+  .smalltext {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+  }
+
+
+  div .seventh h1 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  
+  /* Navbar bottom */
+.navigation {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .menuToggle {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-color: #7AA874;
+    border: 5px solid var(--clr);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    margin-bottom: 5px;
+    margin-left: 300px;
+    margin-bottom: -40px;
+  }
+
