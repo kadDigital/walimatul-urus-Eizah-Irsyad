@@ -25,13 +25,11 @@
 </head>
 <body >
     <div >
-        <button id="show-content-btn" >Click to Show Content
-            <img src="images/letter.png" alt="">
-        </button>
+        <!-- <button id="show-content-btn" >Click to Show Content
+        </button> -->
        
         
 
-        <div class="container" style="display:none">
         <div class="container">
             <div class="first box" >
                  <div class="design">
@@ -93,29 +91,10 @@
 
             </div>
             <div class="third box visible">
-                <div class="third-content hidden">
-                    <h1>
-                        <span>There</span>
-                        <span>are</span>
-                        <span>no</span>
-                        <span>limits</span>
-                        <span>to</span>
-                        <span>what</span>
-                        <span>you</span>
-                        <span>can</span>
-                        <span>accomplish,</span>
-                        <span>except</span>
-                        <span>the</span>
-                        <span>limits</span>
-                        <span>you</span>
-                        <span>place</span>
-                        <span>on</span>
-                        <span>your</span>
-                        <span>own</span>
-                        <span>thinking.</span>
-                      </h1>
-                   
+                <div class="third-content">
+
                 </div>
+                    
 
             </div>
             <div class="fourth box visible" id="timeline-section">
@@ -135,6 +114,20 @@
             </div>
             <div class="sixth box visible" id="rsvp">
                 <div class="sixth-content">
+                <form 
+                    method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbzH4SeuzCUajoNqoSazpukKpuBqii274dcZVbJZLlAGG7fcJb2vYbeqvHif20Zw8JXIAg/exec"
+                >
+                    <input name="Email" type="email" placeholder="Email" required>
+                    <input name="Name" type="text" placeholder="Name" required>
+                    <input name="Attendance" type="radio" value="Yes" required> Yes
+                    <input name="Attendance" type="radio" value="No"> No
+
+                    <textarea name="Wishes" rows="4" cols="50" placeholder="Write your wishes"></textarea>
+
+                    
+                    <button type="submit">Send</button>
+                    </form>
 
                 </div>
                 

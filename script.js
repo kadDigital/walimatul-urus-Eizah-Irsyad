@@ -92,28 +92,28 @@ setInterval(updateCountdown, 1000);
 
 
 //show button
-const showContentBtn = document.getElementById("show-content-btn");
-const contentContainer = document.querySelector(".container");
+// const showContentBtn = document.getElementById("show-content-btn");
+// const contentContainer = document.querySelector(".container");
 
-showContentBtn.addEventListener("click", function() {
+// showContentBtn.addEventListener("click", function() {
     // toggle visibility of content container
-    contentContainer.style.display = "block";
+    // contentContainer.style.display = "block";
 
     // hide the show button
-    showContentBtn.style.display = "none";
-});
+//     showContentBtn.style.display = "none";
+// });
 
 
 
 
-const playMusicBtn = document.getElementById("show-content-btn");
-const music = document.getElementById("music");
-music.volume = 0.1;
+// const playMusicBtn = document.getElementById("show-content-btn");
+// const music = document.getElementById("music");
+// music.volume = 0.1;
 
 
-playMusicBtn.addEventListener("click", () => {
-  music.play();
-});
+// playMusicBtn.addEventListener("click", () => {
+//   music.play();
+// });
 
 
 
@@ -125,9 +125,9 @@ audio.loop = true;
 
 menuuToggle.addEventListener('click', () => {
   if (menuuToggle.classList.contains('active')) {
-    audio.play();
-  } else {
     audio.pause();
+  } else {
+    audio.play();
   }
 });
 
@@ -139,3 +139,22 @@ menuToggle.onclick = function () {
 }
 
 
+// var form = document.getElementById('sheetdb-form');
+// form.addEventListener('submit', e => {
+//   e.preventDefault();
+//   fetch(form.action, {
+//     method: 'POST',
+//     body: new FormData(document.getElementById('sheetdb-form')),
+//   }).then (
+//     response => response.json()
+//   ).then ((html) => {
+//     // clear the form
+//     document.getElementById('sheetdb-form').reset();
+    
+//     // display "done" message
+//     alert('Done!');
+    
+//     // open new tab
+//     // window.open('', '_blank')
+//   });
+// });

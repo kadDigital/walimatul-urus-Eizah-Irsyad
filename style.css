@@ -7,17 +7,7 @@ body {
     background-color: #Ffff;
     
 }
-button {
-    width: 500px;
-    height: 500px;
-    margin-top: 100px;
-    background-color: red;
-}
 
-button img {
-    height: 300px;
-    width: 300px;
-}
 
 div {
     display: flex;
@@ -82,7 +72,7 @@ h1 {
 
 div.box.visible {
   opacity: 1;
-  opacity: 1; /* Show when visible */
+  opacity: 1; 
   transform: scale(1);
   
 }
@@ -255,13 +245,13 @@ div .first .footer-2 {
 }
 
 div .first .first-text #span {
-    margin-left: 100px;
+    margin-left: 10x0px;
 }
 
 
 
 span:nth-child(2) {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .hidden {
@@ -341,9 +331,8 @@ div .second-text .line2{
 
 }
 div .second-text .line3 {
-    margin-bottom: 200px;
+    margin-bottom: 240px;
     position: absolute;
-    font-weight: bold;
     letter-spacing:5 ;
     text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
     
@@ -351,9 +340,8 @@ div .second-text .line3 {
 }
 
 div .second-text .line4 {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     position: absolute;
-    font-weight: bold;
     letter-spacing:5 ;
     text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
 
@@ -362,16 +350,15 @@ div .second-text .line4 {
 }
 
 div .second-text .line5 {
-    margin-bottom: 140px;
+    margin-bottom: 180px;
     position: absolute;
-    font-weight: bold;
     text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
 
 
 }
 
 div .second-text .line6 {
-    margin-top: 30px;
+    margin-bottom: 40px;
     position: absolute;
     letter-spacing: 2;
     animation: fade-in 2s forwards;
@@ -381,7 +368,7 @@ div .second-text .line6 {
 
 }
 div .second-text .line7 {
-    margin-top: 75px;
+    margin-top: 25px;
     position: absolute;
     letter-spacing: 2;
     animation: fade-in 2s forwards;
@@ -391,7 +378,7 @@ div .second-text .line7 {
 
 }
 div .second-text .line8 {
-    margin-top: 140px;
+    margin-top: 90px;
     position: absolute;
     letter-spacing: 2;
     animation: fade-in 2s forwards;
@@ -401,7 +388,7 @@ div .second-text .line8 {
 
 }
 div .second-text .line9 {
-    margin-top: 180px;
+    margin-top: 140px;
     position: absolute;
     letter-spacing: 2;
     animation: fade-in 2s forwards;
@@ -411,13 +398,13 @@ div .second-text .line9 {
 
 }
 div .second-text .line10 {
-    margin-top: 280px;
+    margin-top: 260px;
     position: absolute;
     letter-spacing: 2;
     animation: fade-in 2s forwards;
     text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
     font-family: 'Great Vibes', cursive;
-    font-size: 30px;
+    font-size: 40px;
 
 }
 div .second-text .line11 {
@@ -427,18 +414,18 @@ div .second-text .line11 {
     animation: fade-in 2s forwards;
     text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
     font-family: 'Great Vibes', cursive;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
 div .second-text .line12 {
-    margin-top: 400px;
+    margin-top: 420px;
     position: absolute;
     letter-spacing: 2;
     animation: fade-in 2s forwards;
     text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
     font-family: 'Great Vibes', cursive;
-    font-size: 30px;
+    font-size: 40px;
 
 }
 
@@ -482,7 +469,7 @@ div .third  {
     
 }
 
-h1 {
+/* h1 {
     font-family: 'Cinzel', serif;
     font-size: 20px;
 
@@ -580,7 +567,7 @@ h1 {
       opacity: 1;
       filter: blur(0);
     }
-  }
+  } */
 
 div .fourth  {
     background-color: #fff;
@@ -643,6 +630,54 @@ div .sixth  {
     
 }
 
+form {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
 div .seventh  {
     background-color: #fff;
     background-repeat: no-repeat;
@@ -656,8 +691,7 @@ div .seventh  {
     opacity: 0; /* Start hidden */
     transform: scale(0.5); /* Start small */
     transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-    flex-direction: row;
-    display: flex;
+  
     
     
     
@@ -676,14 +710,19 @@ div .seventh p {
 }
 
 #countdown {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 15px;
+  display: flex;
+  justify-content: center; /* Center the child elements horizontally */
+  align-items: center;
+  font-size: 15px;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    
   }
   
   #countdown > div {
     text-align: center;
+    margin: 0 10px;
   }
   
   #countdown > div > span {
@@ -706,18 +745,19 @@ div .seventh p {
   /* Navbar bottom */
 .navigation {
     position: fixed;
-    bottom: 0;
+    top: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 300px;
     
   }
   
   .menuToggle {
     position: relative;
-    width: 45px;
-    height: 45px;
-    background-color: #7AA874;
+    width: 35px;
+    height: 35px;
+    background-color: #FCC8D1;
     border: 5px solid var(--clr);
     border-radius: 50%;
     cursor: pointer;
